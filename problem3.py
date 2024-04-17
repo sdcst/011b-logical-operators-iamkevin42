@@ -30,3 +30,16 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+import math
+
+def pt(a,b,c):
+    return a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2
+
+a=int(input("Enter the first number\n"))
+b=int(input("Enter the second number\n"))
+c=int(input("Enter the last number\n"))
+
+if pt(a, b, c):
+    print("These numbers form a Pythagorean triple.")
+else:
+    print("These numbers do not form a Pythagorean triple.")

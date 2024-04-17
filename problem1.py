@@ -26,3 +26,18 @@ Enter a number: 16
 16 is not frue
 """
 
+def is_divisible_by_6_not_8(num):
+    if num % 6 == 0:
+        if num % 8 != 0:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+number = int(input("Enter a number\n"))
+if is_divisible_by_6_not_8(number):
+    print(number, "is frue")
+else:
+    print(number, "is not frue")
+

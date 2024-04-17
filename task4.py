@@ -22,4 +22,14 @@ Enter your name=>Gordon
 You are not a VIP.
 """
 
+
+
 VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
+
+
+a = input("PLease enter your first name to see if you are a vip\n")
+
+if a == "Guile" or a =="Blanka" or a == "Christine" or a == "Carol" or a=="Richard" or a=="Daniel" or a =="Chun-Li":
+    print("You are a vip")
+else:
+    print("You are not a vip")

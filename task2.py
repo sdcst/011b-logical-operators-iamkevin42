@@ -31,3 +31,24 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+import math
+
+def ips(a):
+    sqrt = a**0.5
+    return sqrt.is_integer()
+
+def dbt(a):
+    return a % 2==0
+
+a = int(input('Enter a number\n'))
+
+if ips(a):
+    print(f"{a} is a perfect square")
+else:
+    print(f"{a} is not a perfect square")
+
+
+if dbt(a):
+    print(f"{a} is divisible by 2")
+else:
+    print(f'{a} is not divisible by 2')
